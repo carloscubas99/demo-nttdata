@@ -53,7 +53,7 @@ public class GreenKartPage extends WebBase {
     public void ordernoListaPorOrdenAlfabetico() {
         waitUntilElementIsVisible(sortFruitName, 10);
         click(sortFruitName);
-        Logger.getGlobal().log(Level.INFO,"Haciendo click el el botón sort para ordenar la lista");
+        Logger.getGlobal().log(Level.INFO,"Haciendo click el el boton sort para ordenar la lista");
     }
 
     public boolean validarQueProductosSeMuestranEnOrdenAlfabetico() {

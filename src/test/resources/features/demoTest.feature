@@ -21,10 +21,6 @@ Característica: Validacion de interacciones en RahulShettyPage
     #Dado que me encuentro en la seccion "Automation Practice - 1"
     Y me dirijo al modulo "Top Deals" de GreenKart
 
-  @TEST-0020
-  Escenario: Ordenamiento alfabetico de items en el carrito de compras v2
-    #Dado que me encuentro en la seccion "Automation Practice - 1"
-    Y me dirijo al modulo "Top Deals" de GreenKart
 
 
 
