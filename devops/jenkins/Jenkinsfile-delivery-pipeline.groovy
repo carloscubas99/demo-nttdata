@@ -21,7 +21,7 @@ pipeline {
                         println('*** TRIGGER BUILD & TEST ***')
                         println('Ejecutando comand mvn')
                         //sh "mvn clean verify -Denvironment=${params.AMBIENTE} -Dcucumber.filter.tags=\"${params.TAGS}\""
-                        bat "mvn clean verify -Denvironment=${params.AMBIENTE} -Dcucumber.filter.tags=\"${params.TAGS}\""
+                        bat "mvn clean verify -Dcucumber.filter.tags=\"${params.TAGS}\""
 
                     } finally {
                         step([
