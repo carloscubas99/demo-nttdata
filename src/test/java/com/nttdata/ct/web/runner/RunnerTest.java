@@ -1,5 +1,6 @@
 package com.nttdata.ct.web.runner;
 
+import com.nttdata.ct.web.jira.JiraXray;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -30,5 +31,6 @@ public class RunnerTest {
     @AfterClass
     public static void afterExecution() {
         Logger.getLogger(RunnerTest.class.getName()).log(Level.INFO, "AFTER EXECUTION --->");
+        JiraXray.importResults();
     }
 }

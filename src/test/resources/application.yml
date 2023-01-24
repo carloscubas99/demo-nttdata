@@ -30,3 +30,13 @@ spring:
     url: jdbc:postgresql://localhost:54322/xxxx
     username: xxxx
     password: xxxx
+
+###########################################################################
+############################# Jira XRAY ###################################
+###########################################################################
+jxray:
+  integration: on
+  host: "dsdsddsdsd"
+  client:
+    id: XXX
+    secret: XXX
