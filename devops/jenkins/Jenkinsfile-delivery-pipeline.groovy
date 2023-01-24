@@ -2,8 +2,8 @@ pipeline {
     // agent {label 'jkagentwin01'} //nombre de servidor
     agent any
     tools {
-        maven 'M2_HOME'
-        jdk 'JAVA_HOME'
+        maven 'Maven 3.8.5'
+        jdk 'Java 11.0.8'
     }
     stages {
         stage('Preparation') {
@@ -21,7 +21,7 @@ pipeline {
                         println('*** TRIGGER BUILD & TEST ***')
                         println('Ejecutando comand mvn')
                         //sh "mvn clean verify -Denvironment=${params.AMBIENTE} -Dcucumber.filter.tags=\"${params.TAGS}\""
-                        bat "mvn clean verify -Denvironment=${params.AMBIENTE} -Dcucumber.filter.tags=\"${params.TAGS}\""
+                        bat "mvn clean verify -Dcucumber.filter.tags=\"${params.TAGS}\""
 
                     } finally {
                         step([
