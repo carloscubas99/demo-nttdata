@@ -10,7 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class GreenKartPage extends WebBase {
@@ -32,18 +35,18 @@ public class GreenKartPage extends WebBase {
         wait.until(ExpectedConditions.visibilityOf(driver().findElement(By.xpath(moduloElec))));
         click(find().getElementBy(By.xpath(moduloElec)));
         UtilWeb.waitForSeconds(1);
+        switchToOpenTab();
     }
 
     public void switchToOpenTab() {
         var windows = driver().getWindowHandles();
         for (String window : windows) {
             System.out.println("Switching to window: " + window);
-           driver().switchTo().window(window);
+            driver().switchTo().window(window);
         }
     }
 
     public void ordernoListaPorOrdenAlfabetico() {
-        switchToOpenTab();
         waitUntilElementIsVisible(sortFruitName, 10);
         click(sortFruitName);
     }
@@ -51,7 +54,7 @@ public class GreenKartPage extends WebBase {
     public boolean validarQueProductosSeMuestranEnOrdenAlfabetico() {
         List<String> originalList = listProductos
                 .stream()
-                .map(x-> x.getText())
+                .map(x -> x.getText())
                 .collect(Collectors.toList());
         List<String> sortedList = originalList
                 .stream()

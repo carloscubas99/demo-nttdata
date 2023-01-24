@@ -2,8 +2,8 @@ pipeline {
     // agent {label 'jkagentwin01'} //nombre de servidor
     agent any
     tools {
-        maven 'maven'
-        jdk 'JAVA'
+        maven 'M2_HOME'
+        jdk 'JAVA_HOME'
     }
     stages {
         stage('Preparation') {
