@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 public class GreenKartPage extends WebBase {
@@ -34,6 +36,7 @@ public class GreenKartPage extends WebBase {
         String moduloElec = String.format(pathModulo, modulo);
         wait.until(ExpectedConditions.visibilityOf(driver().findElement(By.xpath(moduloElec))));
         click(find().getElementBy(By.xpath(moduloElec)));
+        Logger.getGlobal().log(Level.INFO,"Haciendo click en el modulo {0}",modulo);
         UtilWeb.waitForSeconds(1);
         switchToOpenTab();
     }
@@ -44,11 +47,13 @@ public class GreenKartPage extends WebBase {
             System.out.println("Switching to window: " + window);
             driver().switchTo().window(window);
         }
+        Logger.getGlobal().log(Level.INFO,"Cambiando foco al TAB abierto");
     }
 
     public void ordernoListaPorOrdenAlfabetico() {
         waitUntilElementIsVisible(sortFruitName, 10);
         click(sortFruitName);
+        Logger.getGlobal().log(Level.INFO,"Haciendo click el el botón sort para ordenar la lista");
     }
 
     public boolean validarQueProductosSeMuestranEnOrdenAlfabetico() {

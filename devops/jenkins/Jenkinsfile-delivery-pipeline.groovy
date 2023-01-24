@@ -32,7 +32,7 @@ pipeline {
                                 fileExcludePattern   : '',
                                 fileIncludePattern   : '**/*cucumber.json',
                                 //jsonReportDirectory  : "${env.WORKSPACE}/build",
-                                jsonReportDirectory  : "target/build",
+                                jsonReportDirectory  : "target/cucumber",
                                 parallelTesting      : true,
                                 pendingStepsNumber   : 0,
                                 skippedStepsNumber   : 0,
