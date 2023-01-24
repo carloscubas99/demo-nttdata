@@ -2,7 +2,7 @@ pipeline {
     // agent {label 'jkagentwin01'} //nombre de servidor
     agent any
     tools {
-        maven 'M2_HOME'
+        maven 'Maven 3.8.5'
         jdk 'JAVA_HOME'
     }
     stages {
