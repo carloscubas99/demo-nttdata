@@ -16,8 +16,8 @@ webdriver:
   browser: chrome #chrome, safari, firefox, edge
   path:
     chrome: drivers/win/chromedriver.exe
-    edge: C:\temp\capacitación_de_líderes\aut_web_app\msedgedriver.exe
-    firefox: C:\temp\capacitación_de_líderes\aut_web_app\geckodriver.exe
+    edge: drivers/win/msedgedriver.exe
+    firefox: drivers/win/geckodriver.exe
     # Si tienes configurado la variable $PATH del sistema con los drivers no es necesario colocar esta propiedad
   #path: /Users/pmendozz/Documents/NTTData/drivers/chromedriver
 

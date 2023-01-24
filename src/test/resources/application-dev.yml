@@ -1,2 +1,16 @@
+###################
+### URL - SITES ###
+###################
 url:
-  settings: "https://www.google.com/desarrollo"
+  google: https://www.google.com/
+  rahulshetty: https://www.rahulshettyacademy.com/
+  settings: chrome://settings/
+###############################
+### WebDriver Configuration ###
+###############################
+webdriver:
+  browser: firefox #chrome, safari, firefox, edge
+  path:
+    chrome: drivers/win/chromedriver.exe
+    edge: drivers/win/msedgedriver.exe
+    firefox: drivers/win/geckodriver.exe
