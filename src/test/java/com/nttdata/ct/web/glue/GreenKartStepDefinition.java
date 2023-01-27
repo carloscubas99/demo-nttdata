@@ -18,7 +18,6 @@ public class GreenKartStepDefinition {
 
     @Y("me dirijo al modulo {string} de GreenKart")
     public void seleccionolModuloDeGreenKart(String modulo) {
-        //manager.navigateTo("https://rahulshettyacademy.com/seleniumPractise/#/");
         greenKartStep.seleccionoModuloDeGreenKart(modulo);
     }
 

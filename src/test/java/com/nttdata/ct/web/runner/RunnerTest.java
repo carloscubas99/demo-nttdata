@@ -18,7 +18,7 @@ import java.util.logging.Logger;
         publish = true,
         features = {"src/test/resources/features"},
         glue = {"com.nttdata.ct.web.hooks", "com.nttdata.ct.web.glue"},
-        tags = "@TEST-0020"
+        tags = "@TEST-0010"
 )
 public class RunnerTest {
 

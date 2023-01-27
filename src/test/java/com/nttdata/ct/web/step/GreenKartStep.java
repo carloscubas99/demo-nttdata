@@ -20,7 +20,6 @@ public class GreenKartStep {
     public void ordernoListPorOrdenAlfabetico() {
         page.greenKartPage().ordernoListaPorOrdenAlfabetico();
     }
-
     @ScreenShotAfter
     public boolean validoQueLosProductosSemuestranEnOrdenAlfabeticoAtoZCorrectamente() {
         return page.greenKartPage().validarQueProductosSeMuestranEnOrdenAlfabetico();

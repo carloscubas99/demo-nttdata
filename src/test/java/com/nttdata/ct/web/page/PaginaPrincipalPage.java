@@ -27,18 +27,10 @@ public class PaginaPrincipalPage extends WebBase {
         waitUntilElementIsVisible(titlePrincipal, 10);
         return titlePrincipal.isDisplayed();
     }
-
     public void seleccionarCategoriaDelNavbar(String categoria) {
         webDriverWait.until(ExpectedConditions.invisibilityOf(loader));
-       /*for (WebElement element: listCategoria){
-           if (element.getText().equals(categoria)){
-               actions().moveToElement(element).click().build().perform();
-               break;
-           }
-       }*/
         clickElementInAList(listCategoria, categoria);
         UtilWeb.waitForSeconds(3);
-        //waitUntilElementIsClickable(titleJoinNow,12);
     }
 
 }

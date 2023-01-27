@@ -20,7 +20,6 @@ public class StepPages {
     public GreenKartPage greenKartPage() {
         return new GreenKartPage();
     }
-
     public CommercePage commercePage() {
         return new CommercePage();
     }
